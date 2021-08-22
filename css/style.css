@@ -387,22 +387,19 @@ ul {
   margin-left: auto;
   background-color: var(--primary-background-color);
 
-  outline: 1px solid teal;
+  /* outline: 1px solid teal; */
 }
 
 .filter-block {
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* margin-bottom: 20px; */
-
-  outline: 1px solid teal;
+  /* outline: 1px solid teal; */
   padding-top: 94px;
 }
 
 .filtre {
   display: flex;
   padding: 0;
-  /* justify-content: center; */
+  margin-bottom: 50px;
+  justify-content: center;
 }
 
 .filtre-btn:not(:last-child) {
@@ -421,7 +418,6 @@ ul {
   cursor: pointer;
 
   display: block;
-  margin-bottom: 50px;
 }
 
 .filtre-list:hover,
@@ -432,10 +428,6 @@ ul {
 
 /* ---Портфолио-Все--- */
 
-/* .portfolio-content {
-  display: flex;
-} */
-
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -445,7 +437,7 @@ ul {
   margin-bottom: 0;
   margin-left: -30px;
 
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 .content > .content-list {
@@ -497,9 +489,12 @@ ul {
 /* ---Логотип--- */
 
 .logo-footer {
-  display: block;
+  /* display: block; */
   padding-top: 60px;
   margin-bottom: 20px;
+  margin-right: 0;
+
+  padding-right: 0;
 }
 
 .logo-studio-footer {
@@ -508,8 +503,6 @@ ul {
 
 /* ---Блок адресс--- */
 
-/* .address {} */
-
 .footer-navigation {
   color: var(--third-text-color);
   font-size: 14px;
@@ -517,13 +510,16 @@ ul {
   letter-spacing: 0.03em;
 
   display: block;
-  margin-bottom: 9px;
+  margin-right: 0;
+
+  padding-right: 0;
 }
 
 .footer-navigation:hover,
 .footer-navigation:focus {
   color: var(--secondary-text-color);
 }
+
 .footer-connect {
   color: rgb(255, 255, 255, 0.6);
   font-size: 14px;
@@ -531,7 +527,10 @@ ul {
   letter-spacing: 0.03em;
 
   display: block;
-  margin-bottom: 9px;
+  margin-top: 9px;
+  margin-right: 0;
+
+  padding-right: 0;
 }
 
 .footer-connect:hover,
@@ -544,6 +543,11 @@ ul {
   padding-right: 0;
   margin-right: 0;
 }
-.footer-group {
-  /* flex-direction: column; */
+
+.address-list {
+  display: flex;
+  padding: 0;
+}
+.logo-footer-test {
+  display: block;
 }
