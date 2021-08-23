@@ -26,8 +26,12 @@ p {
 }
 
 ul {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
 }
 
 /* ----------------Шапка--------------- */
@@ -35,10 +39,6 @@ ul {
 /* ---Логотип--- */
 
 .header {
-  width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
-  align-items: center;
   background-color: var(--primary-background-color);
 }
 
@@ -89,7 +89,6 @@ ul {
 
 .navigation-list {
   display: flex;
-  padding: 0;
 }
 
 /* Сброс стилей */
@@ -100,7 +99,7 @@ ul {
   font-style: normal;
 }
 
-.navigation-list .navigation-li:not(:last-child) {
+.navigation-li:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -189,9 +188,9 @@ ul {
   text-transform: uppercase;
 
   margin-bottom: 30px;
-  /* outline: 1px solid tomato; */
   display: inline-block;
   padding: 0 46px;
+  min-width: 696px;
 }
 
 .button {
@@ -231,16 +230,18 @@ ul {
 }
 
 .feature-section {
-  width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
   padding-bottom: 94px;
   background-color: var(--primary-background-color);
 }
 
 .item {
   display: flex;
-  padding: 0;
+}
+
+.item-list {
+  display: block;
+  min-width: 270px;
+  min-height: 101px;
 }
 
 .item-list:not(:last-child) {
@@ -254,8 +255,6 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  display: inline-block;
   margin-bottom: 10px;
 }
 
@@ -264,11 +263,10 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  display: inline-block;
 }
 
 /* -------------Чем мы занимаемся----------- */
+
 .occupation-section {
   width: 1600px;
   margin-right: auto;
@@ -277,7 +275,6 @@ ul {
 }
 
 .occupation {
-  /* outline: 1px solid tomato; */
   padding-bottom: 94px;
 }
 
@@ -294,7 +291,6 @@ ul {
 
 .heading-list {
   display: flex;
-  padding: 0;
 }
 
 .heading-li {
@@ -314,7 +310,6 @@ ul {
 
 .command-section {
   background-color: var(--secondary-background-color);
-  /* outline: 1px solid rgb(35, 180, 16); */
   width: 1600px;
   margin-right: auto;
   margin-left: auto;
@@ -340,7 +335,6 @@ ul {
 .command-item {
   display: flex;
   justify-content: center;
-  padding: 0;
 }
 
 .command-list {
@@ -386,20 +380,14 @@ ul {
   margin-right: auto;
   margin-left: auto;
   background-color: var(--primary-background-color);
-
-  /* outline: 1px solid teal; */
-}
-
-.filter-block {
-  /* outline: 1px solid teal; */
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .filtre {
   display: flex;
-  padding: 0;
-  margin-bottom: 50px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filtre-btn:not(:last-child) {
@@ -431,25 +419,20 @@ ul {
 .content {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
 
   margin-top: -30px;
   margin-bottom: 0;
   margin-left: -30px;
-
-  /* outline: 1px solid tomato; */
 }
 
 .content > .content-list {
   flex-basis: calc(100% / 3 - 30px);
-
   margin-top: 30px;
   margin-left: 30px;
   max-height: auto;
 }
 
 .image {
-  display: block;
   height: auto;
   max-width: 100%;
 }
@@ -473,7 +456,6 @@ ul {
   color: var(--primary-text-color);
   line-height: 1.87;
   letter-spacing: 0.03em;
-
   margin-top: 4px;
 }
 
@@ -488,31 +470,36 @@ ul {
 
 /* ---Логотип--- */
 
-.logo-footer {
-  /* display: block; */
+.logo-footer-thumb {
+  display: block;
   padding-top: 60px;
   margin-bottom: 20px;
-  margin-right: 0;
-
-  padding-right: 0;
 }
 
 .logo-studio-footer {
   color: #ffffff;
 }
 
-/* ---Блок адресс--- */
+/* ---Блок адрес--- */
+
+.address-table {
+  padding-bottom: 60px;
+  margin-top: 20px;
+}
+
+.address-list {
+  display: flex;
+}
+
+.address-list:not(:last-child) {
+  margin-bottom: 9px;
+}
 
 .footer-navigation {
   color: var(--third-text-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  display: block;
-  margin-right: 0;
-
-  padding-right: 0;
 }
 
 .footer-navigation:hover,
@@ -527,27 +514,11 @@ ul {
   letter-spacing: 0.03em;
 
   display: block;
-  margin-top: 9px;
   margin-right: 0;
-
   padding-right: 0;
 }
 
 .footer-connect:hover,
 .footer-connect:focus {
   color: var(--secondary-text-color);
-}
-
-.tel {
-  padding-bottom: 60px;
-  padding-right: 0;
-  margin-right: 0;
-}
-
-.address-list {
-  display: flex;
-  padding: 0;
-}
-.logo-footer-test {
-  display: block;
 }
