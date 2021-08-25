@@ -438,15 +438,14 @@ img {
   background-color: #2f303a;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* ---Логотип--- */
 
 .logo-footer {
   max-width: 145px;
-  padding-top: 60px;
-  margin-bottom: 20px;
-  margin-right: 0;
 }
 
 .logo-studio-footer {
@@ -456,12 +455,7 @@ img {
 /* ---Блок адрес--- */
 
 .address-table {
-  padding-bottom: 60px;
   margin-top: 20px;
-}
-
-.address-list {
-  display: flex;
 }
 
 .address-list:not(:last-child) {
@@ -485,10 +479,6 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  display: block;
-  margin-right: 0;
-  padding-right: 0;
 }
 
 .footer-connect:hover,
