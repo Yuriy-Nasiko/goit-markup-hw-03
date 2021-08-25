@@ -291,9 +291,9 @@ img {
   padding: 94px 0;
 }
 
-.command {
+/* .command {
   margin: 0 auto;
-}
+} */
 
 .command-heading {
   color: var(--page-text);
