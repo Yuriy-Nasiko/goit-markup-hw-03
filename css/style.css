@@ -40,12 +40,12 @@ img {
 
 .header {
   background-color: var(--primary-background-color);
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 /* ---Контейнер--- */
@@ -56,13 +56,6 @@ img {
   padding: 0 15px;
 }
 
-.logo-thumb {
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-}
-
 .logo {
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
@@ -70,6 +63,9 @@ img {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
+
+  display: block;
+  margin-right: 93px;
 }
 
 .logo-web {
@@ -112,7 +108,7 @@ img {
   letter-spacing: 0.02em;
 
   display: block;
-  padding: 16px 0;
+  padding: 32px 0;
 }
 
 .nav {
@@ -129,7 +125,6 @@ img {
 .connection {
   display: flex;
   margin-left: auto;
-  padding: 0;
 }
 
 .connection-li + .connection-li {
@@ -157,25 +152,14 @@ img {
 
 .hero-section {
   text-align: center;
-  padding-bottom: 94px;
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero {
-  width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  align-items: center;
-  background-color: #2f303a;
-}
-
-.hero-image {
-  display: block;
-}
-
-.hero-content {
-  display: block;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .hero-text {
@@ -188,9 +172,9 @@ img {
   text-transform: uppercase;
 
   margin-bottom: 30px;
-  display: inline-block;
-  padding: 0 46px;
-  min-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 696px;
 }
 
 .button {
@@ -202,10 +186,7 @@ img {
   height: 50px;
   min-width: 200px;
   text-align: center;
-
   padding: 10px 32px;
-  display: block;
-  margin: 0 auto;
 }
 
 .button:hover,
@@ -230,6 +211,7 @@ img {
 }
 
 .feature-section {
+  padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--primary-background-color);
 }
@@ -239,9 +221,7 @@ img {
 }
 
 .item-list {
-  display: block;
-  min-width: 270px;
-  min-height: 101px;
+  width: 270px;
 }
 
 .item-list:not(:last-child) {
@@ -268,13 +248,9 @@ img {
 /* -------------Чем мы занимаемся----------- */
 
 .occupation-section {
-  width: 1600px;
   margin-right: auto;
   margin-left: auto;
   background-color: var(--primary-background-color);
-}
-
-.occupation {
   padding-bottom: 94px;
 }
 
@@ -294,7 +270,7 @@ img {
 }
 
 .heading-li {
-  display: block;
+  width: 370px;
 }
 
 .heading-li:not(:last-child) {
@@ -310,13 +286,12 @@ img {
 
 .command-section {
   background-color: var(--secondary-background-color);
-  width: 1600px;
   margin-right: auto;
   margin-left: auto;
+  padding: 94px 0;
 }
 
 .command {
-  padding: 94px 0;
   margin: 0 auto;
 }
 
@@ -334,11 +309,10 @@ img {
 
 .command-item {
   display: flex;
-  justify-content: center;
 }
 
 .command-list {
-  min-height: 368px;
+  width: 270px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -350,9 +324,11 @@ img {
 }
 
 .command-image {
-  display: block;
   max-width: 100%;
-  margin-bottom: 30px;
+}
+
+.command-text {
+  padding: 30px 0;
 }
 
 .command-name {
@@ -363,6 +339,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+  display: block;
 }
 
 .commands-position {
@@ -371,12 +348,12 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  display: block;
 }
 
 /* --------------Портфолио------------ */
 
 .portfolio {
-  width: 1600px;
   margin-right: auto;
   margin-left: auto;
   background-color: var(--primary-background-color);
@@ -404,8 +381,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-
-  display: block;
 }
 
 .filtre-list:hover,
@@ -429,12 +404,10 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
-  max-height: auto;
 }
 
 .image {
-  height: auto;
-  max-width: 100%;
+  max-width: 370px;
 }
 
 .box {
@@ -462,18 +435,18 @@ img {
 /* ---------------Подвал -------------*/
 
 .footer {
-  /* width: 1600px; */
   background-color: #2f303a;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 /* ---Логотип--- */
 
-.logo-footer-thumb {
-  display: block;
+.logo-footer {
+  max-width: 145px;
   padding-top: 60px;
   margin-bottom: 20px;
+  margin-right: 0;
 }
 
 .logo-studio-footer {
